@@ -1,0 +1,6 @@
+const {test}=require('node:test'),a=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');const base=path.join(__dirname,'..');const h=fs.readFileSync(path.join(base,'index.html'),'utf8'),js=fs.readFileSync(path.join(base,'app.js'),'utf8'),sw=fs.readFileSync(path.join(base,'sw.js'),'utf8');
+test('dos selectores de modo sincronizables',()=>{for(const prefix of ['main-','camera-'])for(const mode of ['trekkfit','universal'])a.ok(h.includes(`id="${prefix}mode-${mode}"`));a.ok(js.includes('aria-pressed'));a.ok(!h.includes('id="main-strict"'));a.ok(!h.includes('id="camera-strict"'))});
+test('zoom 1.7 solicitado y aplicado',()=>{a.ok(js.includes('Math.max(min,1.7)'));a.ok(js.includes('applyVideoConstraints({advanced:[{zoom:requested}]}'));a.ok(js.includes('getRunningTrackSettings'))});
+test('visor recortado sin deformar',()=>{a.ok(h.includes('object-fit:cover!important'));a.ok(h.includes('height:clamp(128px,22dvh,170px)'))});
+test('herramientas de recuperación disponibles en ajustes',()=>{a.ok(h.includes('<details class="advanced">'));for(const id of ['backup','recover-backup','restore','csv','copy','camera-undo'])a.ok(h.includes(`id="${id}"`))});
+test('service worker versionado',()=>{a.ok(sw.includes('galileo-capturador-v2-1-20261010-r1'))});

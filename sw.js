@@ -1,4 +1,4 @@
-const CACHE='galileo-capturador-v2-20261010-r1';
+const CACHE='galileo-capturador-v2-1-20261010-r1';
 const ASSETS=['./','./index.html','./app.js','./core.js','./vendor/html5-qrcode.min.js','./manifest.webmanifest','./icon-192.png','./icon-512.png','./beep-ok.mp3','./raven-alert.wav'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS))));
 // Waiting worker activates only after old pages close: no mixed versions during a count.
