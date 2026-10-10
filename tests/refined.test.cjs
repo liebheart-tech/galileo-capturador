@@ -3,4 +3,4 @@ test('dos selectores de modo sincronizables',()=>{for(const prefix of ['main-','
 test('zoom 1.7 solicitado y aplicado',()=>{a.ok(js.includes('Math.max(min,1.7)'));a.ok(js.includes('applyVideoConstraints({advanced:[{zoom:requested}]}'));a.ok(js.includes('getRunningTrackSettings'))});
 test('visor recortado sin deformar',()=>{a.ok(h.includes('object-fit:cover!important'));a.ok(h.includes('height:clamp(128px,22dvh,170px)'))});
 test('herramientas de recuperación disponibles en ajustes',()=>{a.ok(h.includes('<details class="advanced">'));for(const id of ['backup','recover-backup','restore','csv','copy','camera-undo'])a.ok(h.includes(`id="${id}"`))});
-test('service worker versionado',()=>{a.ok(sw.includes('galileo-capturador-v2-1-20261010-r1'))});
+test('service worker versionado',()=>{a.ok(sw.includes('galileo-capturador-v2-2-20261010-r1'))});
