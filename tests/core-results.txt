@@ -1,0 +1,20 @@
+✔ SKU válido e inválido; estricto/universal (2.262958ms)
+✔ Code128 alfanumérico y EAN; preserva mayúsculas/minúsculas y ceros (0.093875ms)
+✔ Dos cajas iguales, historial, persistencia y deshacer solo último (1.733ms)
+✔ Error de escritura no genera fantasmas ni elimina registros (0.153583ms)
+✔ Corrupción bloquea mutaciones y conserva original (0.647666ms)
+✔ Otra pestaña no se sobreescribe (0.057ms)
+✔ CSV conserva valores, comillas, ceros, sin fórmulas fabricadas (0.053208ms)
+✔ Caracteres de control rechazados; HTML queda como dato (0.040167ms)
+✔ Estados, consenso y duplicados; repetición explícita (0.109125ms)
+✔ Cancelar inicio y error de permiso regresan a idle (0.0905ms)
+✔ SW incluye todos los recursos locales, sin CDN ni activación forzada (0.378792ms)
+✔ SW obtiene versión activa y no una coincidencia global antigua (2.617625ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 62.009041

@@ -1,0 +1,4 @@
+chromium: APROBADO: manual, descarte, confirmación, universal, sonido, recarga, deshacer, cámara simulada, duplicados, repetición, permiso denegado; sin excepciones.
+chromium: APROBADO offline real con motor local; cancelación durante inicio y audio simulado sin duplicados.
+webkit: APROBADO: manual, descarte, confirmación, universal, sonido, recarga, deshacer, cámara simulada, duplicados, repetición, permiso denegado; sin excepciones.
+webkit: OFFLINE NO VERIFICADO: error interno de navegación del motor automatizado.

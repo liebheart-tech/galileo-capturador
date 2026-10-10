@@ -1,0 +1,2 @@
+chromium: ambos recursos reales decodifican: 0.9055625, 1.8 segundos. No verifica audibilidad ni iPhone físico.
+webkit: ambos recursos reales decodifican: 0.9055833333333333, 1.8 segundos. No verifica audibilidad ni iPhone físico.
